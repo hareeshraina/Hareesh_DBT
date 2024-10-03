@@ -1,1 +1,1 @@
-select * from {{ source('hockey_db', 'scoring') }}
+select * from HOCKEYDB.HOCKEY.scoring
