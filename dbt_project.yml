@@ -39,10 +39,3 @@ models:
   materialized: table
 
 
-version: 2
-sources:
-  - name: HOCKEYDB
-    database: HOCKEYDB
-    tables:
-      - name: SCORING
-      - name: goalies
