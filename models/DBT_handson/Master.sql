@@ -1,0 +1,1 @@
+select * from hockeydb.hockey.Master
