@@ -1,0 +1,1 @@
+select * from {{ ref('Stg_master') }}

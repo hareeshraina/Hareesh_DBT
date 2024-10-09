@@ -1,10 +1,11 @@
-{% snapshot Hareesh_snapshot %}
+{% snapshot Snapshot_Check %}
 
 {{
     config(
         unique_key='Playerid',
         strategy='check',
         check_cols=['FIRSTNAME'],
+        alias='Snapshot_Check'
     )
 }}
 

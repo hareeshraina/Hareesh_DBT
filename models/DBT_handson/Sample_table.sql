@@ -1,0 +1,1 @@
+select *,{{ conversion()  }} as create_date from HOCKEYDB.HOCKEY.COACHES 
