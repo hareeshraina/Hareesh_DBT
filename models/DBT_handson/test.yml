@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: MacroTable
+    columns:
+      - name: BIRTHYEAR
+        tests:
+          - Check_whether_field_has_10_digits

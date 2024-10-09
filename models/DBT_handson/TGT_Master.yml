@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: TGT_Master
+    description: This model contains detailed information about master which derived from staging tables.
+
+    columns:
+      - name: Name
+        description: This columns contains first letter of firstname concatenated with lastname

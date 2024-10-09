@@ -1,0 +1,19 @@
+version: 2
+
+
+sources:
+  - name: DBT_Sources
+    database: HOCKEYDB  
+    schema: HOCKEY
+    tables:
+      - name: ABBREV
+      - name: AWARDSCOACHES
+      - name: AWARDSMISC
+      - name: AWARDSPLAYERS
+      - name: COACHES
+      - name: GOALIES
+      - name: GOALIESSC
+      - name: GOALIESSHOOTOUT
+      - name: MASTER
+      - name: SCORING
+      - name: TEAMS
