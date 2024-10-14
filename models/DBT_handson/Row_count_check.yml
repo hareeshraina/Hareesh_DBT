@@ -1,0 +1,8 @@
+version: 2
+ 
+models:
+  - name: TGT_Master
+    description: "This table contains transformed scoring data."
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: source('DBT_Sources', 'MASTER')

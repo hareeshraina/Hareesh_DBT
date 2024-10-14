@@ -39,6 +39,11 @@ models:
   materialized: table
 
 
+# Define variables here
+vars:
+  Year: 2011
+
+
       
 
 
