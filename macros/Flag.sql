@@ -12,7 +12,7 @@ current_timestamp
 {% endmacro%}
 
 
-{% macro Databasehockey(database_name,schema_name,table_name) %}
+{% macro DatabaseHareesh(database_name,schema_name,table_name) %}
 
 select * from  {{database_name}}.{{schema_name}}.{{table_name}}
 
