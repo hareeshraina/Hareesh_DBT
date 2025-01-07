@@ -17,3 +17,9 @@ sources:
       - name: MASTER
       - name: SCORING
       - name: TEAMS
+
+
+sources:
+  - name: source_name
+    tables:
+      - name: table_name
