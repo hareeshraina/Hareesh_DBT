@@ -1,8 +1,4 @@
-{{ 
-    config(
-        tags=["Dimension"]
-    ) 
-}}
+
 
 select  customer_key,CustomerID,
 Age,

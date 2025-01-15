@@ -42,7 +42,12 @@ vars:
 models:
   DBT_Workshop:
   +materialized: table
-   
+  DIM_CUSTOMER:
+      +tags: Dimensionn
+  Dim_Product:
+      +tags: Dimensionn
+  Dim_Store:
+      +tags: Dimensionn
 
 
 snapshots:
