@@ -1,11 +1,7 @@
-{{ 
-    config(
-        tags=["Dimension"]
-    ) 
-}}
 
 
-select cast (seq_store.nextval as int) as storekey,
+
+select cast (seq_store.nextval as int) as store_key,
 cast(storeid as int) storeid,
 cast (storelocation as varchar(50)) as storelocation,
 ( {{ created_by()}} ) Created_by,
