@@ -1,4 +1,4 @@
 select * from {{ source('DBT_Sources', 'SCORING') }}
-where year = {{ var("filter") }}
+where year = {{ var("Year") }}
 
 

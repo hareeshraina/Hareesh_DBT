@@ -1,0 +1,14 @@
+version: 2
+
+
+sources:
+  - name: DBT_Workshop
+    database: TRAINING  
+    schema: DBT_HSURESH
+    tables:
+      - name: Dim_Customer
+      - name: Dim_Store
+      - name: Dim_Product
+      - name: Dim_Payment
+      - name: RETAIL_DATA
+      - name: RETAIL_DATA2

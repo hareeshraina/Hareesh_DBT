@@ -8,4 +8,3 @@
 select * from HOCKEYDB.HOCKEY.COACHES 
 
 
-{{config( materialized='')}}

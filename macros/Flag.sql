@@ -1,7 +1,6 @@
-{% macro Flag(column_name1,column_name2) %}
+{% macro Flag(column_name) %}
 
-	case when {{column_name1}} is null then 'Y'
-    case when {{column_name2}} is null then 'Z'
+	case when {{column_name}} is null then 'Y'
 	else 'N'
 	end
 {% endmacro%}
