@@ -1,7 +1,7 @@
 version: 2
  
 models:
-  - name: TGT_Master
+  - name: mASTER
     description: "This table contains transformed scoring data."
     tests:
       - dbt_utils.equal_rowcount:
