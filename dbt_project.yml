@@ -7,7 +7,7 @@ version: '1.0.0'
 config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'default'
+profile: 'DEV'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -37,22 +37,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 # Define variables here
 vars:
-  Year: 2011
-
-models:
-  DBT_Workshop:
-  +materialized: table
-  DIM_CUSTOMER:
-      +tags: Dimensionn
-  Dim_Product:
-      +tags: Dimensionn
-  Dim_Store:
-      +tags: Dimensionn
+  Year: ''
 
 
-snapshots:
-  Snapshot_DIM_Customer:
-    +tags: Dimension_SCD2
+    
+
+
+
 
 
 

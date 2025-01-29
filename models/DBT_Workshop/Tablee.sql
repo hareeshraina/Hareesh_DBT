@@ -1,0 +1,1 @@
+select 1::int as id,'New' ::varchar(5) as role, 'Dev' :: varchar(20) as Name

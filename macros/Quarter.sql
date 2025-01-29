@@ -10,3 +10,24 @@
         ELSE 0
     END
 {% endmacro %}
+
+
+{% macro databasemacro(val)%}
+
+{% if val==DEV %}
+  {% set val=target.name %}
+  {% if val=='DEV' %} {% set val='INI' %} {% endif %}
+  {% do return("TRA"~val~"NG")  %}
+{% endif  %}
+
+{% endmacro %}
+
+
+{% macro audit_column()%}
+
+( {{ created_by()}} ) Created_by,
+current_date as Created_Date,
+( {{ created_by()}} ) as Updated_by,
+current_date as Updated_Date
+
+{% endmacro %}

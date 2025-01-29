@@ -4,7 +4,8 @@
         unique_key='CustomerID',
         strategy='check',
         check_cols=['Age','AnnualIncome'],
-        tags=['Dimension_SCD']
+        tags=['Dimension'],
+        invalidate_hard_deletes= true
     )
 }}
 

@@ -1,0 +1,1 @@
+select * from {{ source('DBT_Workshop', 'RETAIL_DATA') }}

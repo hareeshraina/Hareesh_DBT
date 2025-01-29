@@ -1,4 +1,9 @@
-
+{{
+    config(
+        materialized='table',
+        tags=["Dimensionn"]
+    )
+}}
 
 select  customer_key,CustomerID,
 Age,
