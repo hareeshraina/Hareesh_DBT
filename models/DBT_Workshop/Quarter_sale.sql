@@ -7,7 +7,7 @@ WITH Quarter_sales AS (
         SUM({{ quarter_expenditure('purchasedate', 'productcost', 3) }}) AS Q3_Sales,
         SUM({{ quarter_expenditure('purchasedate', 'productcost', 4) }}) AS Q4_Sales
     FROM
-        {{ ref('Retail_data') }}  
+        {{ source('DBT_Workshop', 'RETAIL_DATA') }}
     GROUP BY
         storeid, EXTRACT(YEAR, purchasedate)
 )
