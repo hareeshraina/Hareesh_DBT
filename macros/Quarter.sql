@@ -20,6 +20,12 @@
   {% do return("TRA"~val~"NG")  %}
 {% endif  %}
 
+{% if val==DEV %}
+  {% set val=target.name %}
+  {% if val=='PROD' %} {% set val='PROD' %} {% endif %}
+  {% do return("TRA"~val~"NG")  %}
+{% endif  %}
+
 {% endmacro %}
 
 
@@ -31,3 +37,30 @@ current_date as Created_Date,
 current_date as Updated_Date
 
 {% endmacro %}
+
+{% macro Flag(column_name) %}
+
+	case when {{column_name}} is null then 'Y'
+	else 'N'
+	end
+{% endmacro%}
+
+{% macro conversion() %}
+
+current_timestamp
+
+{% endmacro%}
+
+
+{% macro DatabaseHareesh(database_name,schema_name,table_name) %}
+
+select * from  {{database_name}}.{{schema_name}}.{{table_name}}
+
+{% endmacro%}
+
+{% macro created_by() %}
+
+select current_user
+
+{% endmacro%}
+
