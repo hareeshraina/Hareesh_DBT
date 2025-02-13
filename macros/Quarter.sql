@@ -64,3 +64,15 @@ select current_user
 
 {% endmacro%}
 
+-- macros/unions.sql
+
+{% macro generate_union(tables) %}
+    {% set sql_parts = [] %}
+    {% for table in tables %}
+        {% set sql_part = "SELECT * FROM " ~ ref(table) %}
+        {% do sql_parts.append(sql_part) %}
+    {% endfor %}
+    
+    {{ return(sql_parts | join('\n UNION ALL \n')) }}
+{% endmacro %}
+
