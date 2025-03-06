@@ -4,7 +4,7 @@
     )
 }}
 
-{{ generate_union (['Tablee','Tablee','Tablee']) }}
+{{ union (['Tablee','Tablee','Tablee']) }}
 
 select * from Tablee
 

@@ -1,15 +1,11 @@
-
-
-
-{% snapshot Snapshot_DIM_Customer %}
+{% snapshot Snapshot_external %}
 {{
     config(
         unique_key='CustomerID',
         strategy='check',
         check_cols=['Age','AnnualIncome'],
-        tags=['Dimension'],
-        invalidate_hard_deletes= true
-    )
+        tags=['external_snap'],
+        schema= 'silver'    )
 }}
 
 
@@ -20,7 +16,7 @@ select seq_customer.nextval as Customer_key, cast (CustomerID as int) as Custome
 ( {{ created_by()}} ) Created_by,
 current_date as Created_Date,
 ( {{ created_by()}} ) as Updated_by,
-current_date as Updated_Date from {{ source('DBT_Workshop', 'RETAIL_DATA') }}
+current_date as Updated_Date from {{ ref('stg_retaildata') }}
 
 {% endsnapshot %}
 

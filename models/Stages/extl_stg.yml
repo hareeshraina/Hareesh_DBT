@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: external
+    schema: bronze
+    tables:
+      - name: retail_data
+     

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_retaildata
+    columns:
+      - name: customer_key
+        tests:
+          - not_null
+          
+  - name: int_Retail
+    columns:
+      - name: customer_key
+        tests:
+          - Check_whether_field_has_10_digits
+          - not_null
+          
+  

@@ -76,3 +76,16 @@ select current_user
     {{ return(sql_parts | join('\n UNION ALL \n')) }}
 {% endmacro %}
 
+
+{% macro union(tables) %}
+    {% set points=[] %}
+    {% for table in tables %}
+      {% set point= " select * from " ~ ref(table) %}
+      {% do points.append(point) %}
+    {% endfor %}
+
+    {{ return(points | join ('\n union all \n')) }}
+{% endmacro %}
+
+
+
