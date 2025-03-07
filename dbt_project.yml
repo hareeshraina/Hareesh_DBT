@@ -51,8 +51,7 @@ models:
       +schema: gold
       +materialized: table
 
-snapshots:
-      +tags: "extl_snap"
+
 
 
     
