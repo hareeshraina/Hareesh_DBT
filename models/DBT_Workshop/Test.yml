@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: DIM_CUSTOM
+  - name: DIM_CUST
     columns:
       - name: customer_key
         tests:
