@@ -13,4 +13,4 @@ Gender,
 Created_Date,
  Updated_by,
 Updated_Date, {{ Flag('dbt_valid_to')}} as Flag
-from  {{ ref('Snapshot_external') }}
+from  {{ ref('Snapshot_customer') }}

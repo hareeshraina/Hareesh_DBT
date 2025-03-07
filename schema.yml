@@ -1,0 +1,7 @@
+version: 2
+
+Hareesh_Project:
+  target: dev
+  outputs:
+    dev:
+      schema: ''  # Leave this empty or general, so that it doesn't override your dbt_project.yml
