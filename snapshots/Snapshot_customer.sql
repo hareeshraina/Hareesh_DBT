@@ -1,4 +1,4 @@
-{% snapshot Snapshot_external %}
+{% snapshot Snapshot_customer %}
 {{
     config(
         unique_key='CustomerID',
