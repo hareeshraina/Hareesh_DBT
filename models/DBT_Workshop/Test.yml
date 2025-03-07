@@ -1,13 +1,13 @@
 version: 2
 
 models:
-  - name: DIM_CUSTOMER
+  - name: DIM_CUSTOM
     columns:
       - name: customer_key
         tests:
           - not_null
 
-  - name: Dim_Payment
+  - name: Dim_Paym
     columns:
       - name: payment_key
         tests:
