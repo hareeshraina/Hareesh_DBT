@@ -4,7 +4,6 @@
         unique_key='CustomerID',
         strategy='check',
         check_cols=['Age','AnnualIncome'],
-        tags=['external_snap'],
         schema= 'silver'    )
 }}
 
