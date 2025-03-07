@@ -44,11 +44,15 @@ models:
       +materialized: table
     intermediate:
       +schema: silver
+      +tags: "extl_int"
       +materialized: table
     Target:
-      +tags: Extl_tgt
+      +tags: "extl_tgt"
       +schema: gold
       +materialized: table
+
+snapshots:
+      +tags: "extl_snap"
 
 
     
