@@ -50,6 +50,14 @@ models:
       +tags: "extl_tgt"
       +schema: gold
       +materialized: table
+    elementary:
+    ## elementary models will be created in the schema '<your_schema>_elementary'
+      +schema: "elementary"
+    dbt_artifacts:
+      +schema: artifacts
+    ## To disable elementary for dev, uncomment this:
+    # enabled: "{{ target.name in ['prod','analytics'] }}"
+    
 
 
 
