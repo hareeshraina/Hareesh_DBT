@@ -7,6 +7,12 @@ packages:
  
   - package: dbt-labs/codegen
     version: 0.12.1  # Latest compatible version
+
+  - package: brooklyn-data/dbt_artifacts
+    version: 2.2.2
  
+  - package: elementary-data/elementary
+    version: 0.15.1
+    ## Docs: https://docs.elementary-data.com
  
  
